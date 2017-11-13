@@ -9,6 +9,11 @@ repositories {
     mavenCentral()
 }
 
+test {
+    useTestNG()
+    testLogging.showStandardStreams = true
+}
+
 dependencies {
     testCompile('org.testng:testng:6.11')
 }
